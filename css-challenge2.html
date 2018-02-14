@@ -13,7 +13,17 @@
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
     $(function() {
+      $('#toRed').click(function() {
+        $('div').css('background-color', 'red')
+      });
       
+      $('#toBlue').click(function() {
+        $('div').css('background-color','blue')
+      });
+      
+      $('#toBlack').click(function() {
+        $('div').css('background-color','black')
+      });
       
       
     });
@@ -32,6 +42,7 @@
 <body>
   <button id="toRed">Red!</button>
   <button id="toBlue">Blue!</button>
+  <button id="toBlack">Black!</button>
 <div>Which color should I be?</div>
 </body>
 
